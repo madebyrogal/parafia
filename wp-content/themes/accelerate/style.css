@@ -1902,7 +1902,7 @@ a.read-more:hover {
 		padding: 5px 5px 0;
 	}
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
 	.menu-toggle,
 	.main-navigation.toggled .nav-menu {
 		display: block;
