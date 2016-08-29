@@ -35,8 +35,13 @@
 			<?php
 				global $more;
 				$more = 0;
-				the_content( '<span>'.__( 'Read more', 'accelerate' ).'</span>' ); 
+                                $content = get_the_content(); 
+                                echo mb_strimwidth(strip_tags($content), 0, 500, '...');
+				//the_content( '<span>'.__( 'Read more', 'accelerate' ).'</span>', true ); 
 			?>
+                        <p>
+                            <a href="<?= get_permalink();?>" class="more-link"><span>Czytaj dalej</span></a>
+                        </p>
 		</div>
 	</div>
 	

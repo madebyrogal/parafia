@@ -115,7 +115,8 @@ function accelerate_featured_image_slider() {
 						?>
 						<div class="<?php echo $classes; ?>">
 							<figure>
-								<img alt="<?php echo esc_attr( $accelerate_slider_title ); ?>" src="<?php echo esc_url( $accelerate_slider_image ); ?>">
+                                                            <div class="slider-image" style="background-image: url(<?php echo esc_url( $accelerate_slider_image ); ?>)"></div>                                                            
+								<!--<img alt="<?php echo esc_attr( $accelerate_slider_title ); ?>" src="<?php echo esc_url( $accelerate_slider_image ); ?>">-->
 							</figure>
 							<div class="<?php echo $classes2; ?>">
 								<?php if( !empty( $accelerate_slider_title ) || !empty( $accelerate_slider_text ) ) { ?>

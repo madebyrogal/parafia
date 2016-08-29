@@ -484,8 +484,8 @@ body {
 #masthead {
 }
 #header-text-nav-container {
-	border-bottom: 1px solid #F2F2F2;
-	background-color: #F8F8F8;
+	border-bottom: 1px solid #ededed;
+	background-color: #ededed;
 }
 #header-text-nav-wrap {
 	padding: 30px 0 40px;
@@ -501,6 +501,7 @@ body {
 }
 #header-logo-image img {
 	margin-bottom: 0px;
+        height: 90px;
 }
 #header-text {
 	float: left;
@@ -575,7 +576,7 @@ nav li > ol {
 }
 .main-navigation {
 	width: 100%;
-	background-color: #FFFFFF;
+	background-color: #ededed;
 }
 .main-navigation li {
 	float: left;
@@ -650,7 +651,7 @@ li.default-menu {
 	height: 100%;
 	padding: 8px 14px;
 	color: #353e45;
-	background-color: #FFFFFF;
+	background-color: #ededed;
 }
 .main-navigation ul li ul li a:hover,
 .main-navigation ul li ul li:hover > a,
@@ -766,6 +767,7 @@ li.default-menu {
 #featured-slider,
 #featured-slider .slider-cycle {
 	position: relative;
+        max-width: 100%;
 }
 .slider-cycle {
 }
@@ -828,6 +830,12 @@ li.default-menu {
 }
 #featured-slider .entry-container-left .entry-content {
 	text-align: left;
+}
+#featured-slider .slider-image{
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+    background-position: 50% 50%;
 }
 a.slide-prev,
 a.slide-next {
@@ -991,6 +999,7 @@ a.slide-next:hover {
 }
 .widget_recent_work img {
 	margin-bottom: 0px;
+        height: 200px;
 }
 .widget_recent_work .tg-one-fourth {
 	position: relative;
@@ -1035,6 +1044,10 @@ a.slide-next:hover {
 }
 .widget_image_service_block img {
 	margin-bottom: 15px;
+        height: 330px;
+        width: 330px;
+        -webkit-border-radius: 50% 50%;
+        border-radius: 50% 50%;
 }
 .widget_image_service_block .entry-title {
 	font-size: 22px;
@@ -1049,6 +1062,7 @@ a.slide-next:hover {
 }
 .widget_image_service_block p {
 	font-size: 15px;
+        display: none;
 }
 .widget_image_service_block .more-link span {
    font-size: 14px;
@@ -1696,6 +1710,9 @@ a#scroll-up:hover {
 }
 .post .entry-content a:hover {
 	text-decoration: underline;
+}
+.post-image-content-wrap .entry-content img, .post-image-content-wrap .entry-content iframe{
+    display: none;
 }
 .blog-small .post .post-featured-image {
 	float: left;
