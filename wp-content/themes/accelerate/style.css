@@ -488,7 +488,7 @@ body {
 	background-color: #ededed;
 }
 #header-text-nav-wrap {
-	padding: 30px 0 40px;
+	padding: 20px 0 20px;
 }
 #header-left-section {
 	float: left;
@@ -501,7 +501,7 @@ body {
 }
 #header-logo-image img {
 	margin-bottom: 0px;
-        height: 90px;
+        height: 120px;
 }
 #header-text {
 	float: left;
@@ -519,9 +519,12 @@ h1#site-title {
 }
 #site-description {
 	line-height: 24px;
-	font-size: 16px;
+	font-size: 20px;
 	padding-bottom: 0;
 	color: #353e45;
+        max-width: 540px;
+        font-family: Roboto;
+        font-weight: 300;
 }
 #header-right-section {
 	float: right;
@@ -588,7 +591,7 @@ nav li > ol {
 	color: #353e45;
 	display: block;
 	float: left;
-	font-size: 16px;
+	font-size: 20px;
 	padding: 12px 16px;
 }
 .main-navigation li.default-menu,
@@ -674,7 +677,7 @@ li.default-menu {
 	cursor: pointer;
 }
 .site-header .menu-toggle {
-	background: #FFFFFF;
+	background: #ededed;
 	color: #353e45;
 	font-size: 20px;
 	font-weight: 300;
@@ -1042,12 +1045,21 @@ a.slide-next:hover {
 	text-align: center;
 	padding-bottom: 50px;
 }
+.widget_image_service_block .tg-one-third:hover .entry-title a{
+    color: #f69d02;
+}
 .widget_image_service_block img {
 	margin-bottom: 15px;
-        height: 330px;
-        width: 330px;
+        height: 250px;
+        width: 250px;
         -webkit-border-radius: 50% 50%;
         border-radius: 50% 50%;
+        -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+        filter: grayscale(100%);
+}
+.widget_image_service_block img:hover{
+        -webkit-filter: grayscale(0%); /* Chrome, Safari, Opera */
+        filter: grayscale(0%);
 }
 .widget_image_service_block .entry-title {
 	font-size: 22px;
@@ -1848,6 +1860,10 @@ a.read-more:hover {
 .entry-content a.read-more:hover {
 	text-decoration: none;
 }
+#google-maps{
+    width: 100%;
+    height: 500px;
+}
 
 /* =RESPONSIVE STRUCTURE
 ----------------------------------------------- */
@@ -1976,4 +1992,8 @@ a.read-more:hover {
 		font-size: 12px;
 		padding: 0 8px;
 	}
+        
+        #google-maps{
+            height: 380px;
+        }
 }
